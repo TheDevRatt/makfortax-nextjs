@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Navbar: React.FC = () => {
@@ -11,13 +12,13 @@ const Navbar: React.FC = () => {
 
   return (
     <header
-      className="sticky top-0 border-b border-transparent backdrop-blur-sm transition duration-200 ease-in-out animate-header-slide-down-fade"
+      className="sticky top-0 border-b border-transparent backdrop-blur-sm transition duration-200 ease-in-out animate-header-slide-down-fade "
       style={{ zIndex: 39 }}
     >
       <div className="md:max-w-7xl mx-auto w-full max-w-5xl px-6">
-        <div className="bg-root absolute left-0 top-0 z-20 flex w-full flex-col items-center md:hidden">
-          <div className="flex w-full items-center px-6 py-4">
-            <div className="flex-auto">
+        <div className="bg-root absolute left-0 top-0 z-20 flex w-full flex-col items-center md:hidden ">
+          <div className="flex w-full items-center px-6 py-4 bg-black">
+            <div className="flex-auto ">
               <a
                 className="outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-700"
                 href="/home"
@@ -25,7 +26,7 @@ const Navbar: React.FC = () => {
                 <img src="/MakForTaxLogo.svg" alt="Logo" />
               </a>
             </div>
-            <div className="flex flex-auto justify-end">
+            <div className="flex flex-auto justify-end ">
               <button
                 aria-controls="mobile-menu"
                 aria-expanded={isMenuOpen ? "true" : "false"}
@@ -57,7 +58,7 @@ const Navbar: React.FC = () => {
             </div>
           </div>
           <div
-            className={`flex w-full px-6 py-4 md:hidden ${
+            className={`flex w-full px-6 py-4 md:hidden bg-black ${
               isMenuOpen ? "block" : "hidden"
             }`}
             id="mobile-menu"
@@ -71,9 +72,9 @@ const Navbar: React.FC = () => {
               </a>
               <a
                 className="text-base h-11 pl-4 pr-4 rounded-md gap-2 font-semibold bg-black dark:bg-white text-white dark:text-black border-slate-500 hover:bg-black/90 dark:hover:bg-white/90 focus-visible:ring-2 dark:focus-visible:ring-white/40 focus-visible:ring-black/40 focus-visible:outline-none dark:focus-visible:bg-white/90 focus-visible:bg-black/90 disabled:hover:bg-black dark:disabled:hover:bg-white inline-flex items-center border justify-center select-none disabled:cursor-not-allowed disabled:opacity-70 transition ease-in-out duration-200 mb-4 w-full"
-                href="/signup"
+                href="mailto:FillThisIn@example.com"
               >
-                Contact
+                Contact Now
               </a>
               <a
                 className="text-left text-md block w-full border-b border-slate-600 py-4 font-semibold text-slate-400 transition duration-200 ease-in-out last:border-none hover:text-slate-200"
