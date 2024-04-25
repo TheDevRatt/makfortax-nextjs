@@ -14,7 +14,7 @@ export default function page() {
       {/* Main Content Container */}
       <div className="mx-auto max-7xl overflow-hidden">
         <section className="flex">
-          <HeroHighlight className="flex flex-col md:flex-row items-center md:-space-y-20 -mt-[20rem]">
+          <HeroHighlight className="flex flex-col md:flex-row items-center md:-space-y-60 md:space-x-40 -mt-[20rem] md:mt-0">
             <div className="order-2 md:order-1">
               <div className="flex flex-col md:justify-start">
                 <div className="self-center mt-[-15rem] md:self-start">
