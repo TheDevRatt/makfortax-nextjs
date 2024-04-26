@@ -261,8 +261,6 @@ export default function page() {
           </span>
         </h2>
       </section>
-
-      <HeroSection showGradient={true} title={<span>This is a test</span>} />
     </div>
   );
 }
