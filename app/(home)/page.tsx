@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
 import { HeroHighlight, Highlight } from "./components/HeroHighlight";
@@ -18,7 +18,7 @@ export default function page() {
       {/* Main Content Container */}
       <div className="mx-auto max-7xl overflow-hidden">
         <section className="flex">
-          <HeroHighlight className="flex flex-col md:flex-row items-center md:-space-y-60 md:space-x-32 md:ml-48 -mt-[20rem] md:mt-0">
+          <HeroHighlight className="flex flex-col md:flex-row items-center md:-space-y-60 md:space-x-32 md:ml-48 md:mt-0">
             <div className="order-2 md:order-1">
               <div className="flex flex-col md:justify-start">
                 <div className="self-center mt-[-15rem] md:self-start">
@@ -105,7 +105,7 @@ export default function page() {
           ></div>
           <div
             aria-hidden="true"
-            className="-top-1 left-1/2 h-[150px] w-full max-w-[200px] md:max-w-[400px] user-select-none center pointer-events-none absolute -translate-x-1/2 -translate-y-1/2"
+            className="-top-1 left-1/2 h-[190px] w-full max-w-[200px] md:max-w-[400px] user-select-none center pointer-events-none absolute -translate-x-1/2 -translate-y-1/2"
             style={{
               background:
                 "conic-gradient(from 90deg at 50% 50%, #00000000 50%, #000 50%),radial-gradient(rgba(200,200,200,0.1) 0%, transparent 80%)",
