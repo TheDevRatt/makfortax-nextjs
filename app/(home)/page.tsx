@@ -52,8 +52,8 @@ export default function page() {
         <Navbar />
       </header>
 
-      {/* Main Content Container */}
-      <div className="mx-auto max-7xl overflow-hidden">
+      {/* Hero Section */}
+      <div className="mx-auto max-7xl overflow-hidden" id="home">
         <section className="flex">
           <HeroHighlight className="flex flex-col md:flex-row items-center md:-space-y-60 md:space-x-32 md:ml-48 md:mt-0">
             <div className="order-2 md:order-1">
@@ -130,6 +130,7 @@ export default function page() {
         </section>
       </div>
 
+      {/* Awards */}
       <section className="mx-auto px-6 py-24 sm:py-24 max-w-5xl md:max-w-7xl">
         <div className="relative rounded-3xl border-t border-slate-600 pt-20">
           <div
@@ -289,7 +290,11 @@ export default function page() {
         </div>
       </section>
 
-      <section className="mx-auto px-6 py-12 sm:py-24 max-w-5xl md:max-w-7xl">
+      {/* About Section */}
+      <section
+        className="mx-auto px-6 py-12 sm:py-24 max-w-5xl md:max-w-7xl"
+        id="about"
+      >
         <h2 className="mb-2 text-center text-[3rem] md:text-[3.5rem] tracking-tight leading-[120%] font-gradient">
           About
           <span className="inline leading-[0] bg-gradient-to-br bg-clip-text text-transparent from-[#9281F7] to-[#9A54DC]">
@@ -312,10 +317,14 @@ export default function page() {
             <AvatarFallback>UM</AvatarFallback>
           </Avatar>
 
-          <h3 className="text-3xl ml-5 flex flex-col font-gradient">
-            Usama Makary
-            <span className="text-sm mt-2 text-slate-400">CPA, CGA, MBA</span>
-          </h3>
+          <div>
+            <h3 className="text-3xl ml-5 flex flex-col font-gradient">
+              Usama Makary
+            </h3>
+            <span className="text-sm mt-2 text-slate-400 ml-6">
+              CPA, CGA, MBA
+            </span>
+          </div>
         </div>
 
         <p className="flex justify-center font-normal text-base text-slate-300 text-justify mt-5 md:ml-52 md:mr-52">
@@ -355,7 +364,11 @@ export default function page() {
         </p>
       </section>
 
-      <section className="mx-auto px-6 py-12 sm:py-24 max-w-5xl md:max-w-[100rem]">
+      {/* Services Section */}
+      <section
+        className="mx-auto px-6 py-12 sm:py-24 max-w-5xl md:max-w-[100rem]"
+        id="services"
+      >
         <h2 className="mb-2 text-center text-[3rem] md:text-[3.5rem] tracking-tight leading-[120%] font-gradient">
           Our
           <span className="inline leading-[0] bg-gradient-to-br bg-clip-text text-transparent from-[#9281F7] to-[#9A54DC]">
@@ -373,13 +386,185 @@ export default function page() {
         <HoverEffect items={items} />
       </section>
 
-      <section className="mx-auto px-6 py-12 sm:py-24 relative mb-8 mt-8 flex w-full flex-col items-center justify-center md:mb-12 md:mt-12">
-        <div>
-
+      {/* Testimonials Section */}
+      <section
+        className="mx-auto px-6 py-12 sm:py-24 relative mb-8 mt-8 flex w-full flex-col items-center justify-center md:mb-12 md:mt-12"
+        id="testimonials"
+      >
+        {/* <h2 className="mb-2 text-center text-[3rem] md:text-[3.5rem] tracking-tight leading-[120%] font-gradient">
+          Testimonials
+        </h2> */}
+        <div
+          aria-hidden="true"
+          className="left-1/2 top-0 w-[700px] center pointer-events-none absolute h-px max-w-full -translate-x-1/2 -translate-y-1/2"
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.0) 0%, rgba(143, 143, 143, 0.67) 50%, rgba(0, 0, 0, 0) 100%) ",
+          }}
+        ></div>
+        <div
+          aria-hidden="true"
+          className="left-1/2 top-0 h-[300px] w-[900px] center pointer-events-none absolute max-w-full -translate-x-1/2 -translate-y-1/2"
+          style={{
+            background:
+              "conic-gradient(from 90deg at 50% 50%, #00000000 50%, #000 50%),radial-gradient(rgba(200,200,200,0.1) 0%, transparent 80%)",
+          }}
+        ></div>
+        <div className="flex flex-col items-center justify-center gap-12">
+          <blockquote className="mx-auto max-w-4xl text-center">
+            <span className="text-[1.2rem] leading-[1.5] text-slate-300 font-light">
+              Usama is a <Highlight>‘natural business thinker’</Highlight> by
+              that I mean he puts 100% effort behind understanding the business
+              model or challenge before applying his analytical and fundamental
+              skills. He came to work with enthusiasm, professionalism and deep
+              sense of pride for his contribution to a project or financial
+              report. As his form supervisor, he made a positive contribution to
+              my team and would consider him to be a role model in his industry.
+            </span>
+          </blockquote>
+          <div className="flex items-center gap-4">
+            <Avatar className="w-[50px] h-[50px]">
+              <AvatarImage src="https://media.licdn.com/dms/image/C4D03AQGZHSwoJIMAmw/profile-displayphoto-shrink_200_200/0/1516859084926?e=1719446400&v=beta&t=nN_VAaqWvblAkTmpMyvR0NmVJzKB97O5m9Ym3pb01jk" />
+              <AvatarFallback>AB</AvatarFallback>
+            </Avatar>
+            <div>
+              <h3 className="text-xl flex flex-col font-gradient">
+                Jim Voudouris
+              </h3>
+              <span className="text-xs mt-2 text-slate-400">
+                Financial Advisor at Raymond James Ltd
+              </span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <HeroSection />
+      {/* Contact Section */}
+      <section className="mx-auto px-6 py-12 sm:py-24 max-w-7xl" id="contact">
+        <h2 className="mb-2 text-center text-[3rem] md:text-[3.5rem] tracking-tight leading-[120%] font-gradient">
+          Going the Extra Mile
+        </h2>
+        <p className="flex justify-center font-normal text-base text-slate-300 text-center mt-5 md:ml-52 md:mr-52 mb-10">
+          <span>
+            In a world where financial challenges can seem daunting, having a
+            trusted partner to guide you through the complexities of accounting,
+            payroll, and tax planning is invaluable. With Usama Makary, you gain
+            more than just a service provider; you gain a partner committed to
+            your financial well-being and success. I believe in building lasting
+            relationships with my clients, underpinned by trust, transparency,
+            and tailored solutions that not only meet but exceed your
+            expectations.
+          </span>
+        </p>
+        <h2 className="mb-2 text-center text-[2rem] md:text-[2rem] tracking-tight leading-[120%] font-gradient">
+          Take the first step towards financial clarity and confidence today.
+        </h2>
+        <div className="flex justify-center mt-10">
+          <button className="inline-flex h-20 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-16 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-2xl">
+            Contact Now
+          </button>
+        </div>
+      </section>
+
+      {/* Footer Section */}
+      <div className="relative z-20 overflow-hidden border-t border-slate-4 bg-black">
+        <div
+          className="left-1/2 top-0 w-[40%] center pointer-events-none absolute h-px max-w-full -translate-x-1/2 -translate-y-1/2"
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.0) 0%, rgba(143, 143, 143, 0.67) 50%, rgba(0, 0, 0, 0) 100%)",
+          }}
+        ></div>
+        <div
+          aria-hidden="true"
+          className="-top-1 left-1/2 h-[100px] w-[70%] md:h-[300px] user-select-none center pointer-events-none absolute max-w-full -translate-x-1/2 -translate-y-1/2"
+          style={{
+            background:
+              "conic-gradient(from 90deg at 50% 50%, #00000000 50%, #000 50%),radial-gradient(rgba(200,200,200,0.1) 0%, transparent 80%)",
+          }}
+        ></div>
+        <footer className="mx-auto max-w-5xl py-24 md:max-w-7xl">
+          <div className="flex flex-col md:flex-row w-full items-center sm:items-start">
+            {/* Left: Copyright Information and Social Links */}
+            <div className="flex sm:flex-1 flex-row gap-8 mb-10 sm:flex-col">
+              <div>
+                <p className="text-xs text-slate-600 font-normal">
+                  Designed and developed by Matthew Makary.
+                  <br />© 2024 Matthew Makary. All rights reserved.
+                </p>
+              </div>
+              <div className="flex gap-4">
+                <a
+                  className="outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-700 rounded-full"
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://github.com/TheDevRatt"
+                >
+                  <img
+                    alt="GitHub"
+                    loading="lazy"
+                    width={32}
+                    height={32}
+                    decoding="async"
+                    src="/footer-github.svg"
+                  />
+                </a>
+                <a
+                  className="outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-700 rounded-full"
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/matthew-makary/"
+                >
+                  <img
+                    alt="LinkedIn"
+                    loading="lazy"
+                    width={32}
+                    height={32}
+                    decoding="async"
+                    src="/footer-linkedin.svg"
+                  />
+                </a>
+              </div>
+            </div>
+
+            {/* Center: Large Logo (Assuming you have an image path) */}
+            <div className="flex-1 flex justify-center mb-10">
+              <img
+                src="/MakForTaxLogo.svg"
+                alt="Large Logo"
+                className="w-auto md:h-10"
+              />
+            </div>
+
+            {/* Right: Website Map */}
+            <div className="flex sm:flex-1 flex-col md:items-end items-start ">
+              <h3 className="text-sm font-base text-slate-400 mb-2">
+                Website Map
+              </h3>
+              <ul className="text-sm text-slate-600 text-center md:text-right">
+                <li className="transition duration-250 ease-in-out hover:text-slate-300 mb-2">
+                  <a href="#hero">Home</a>
+                </li>
+                <li className="transition duration-250 ease-in-out hover:text-slate-300 mb-2">
+                  <a href="#about">About</a>
+                </li>
+                <li className="transition duration-250 ease-in-out hover:text-slate-300 mb-2">
+                  <a href="#services">Services</a>
+                </li>
+                <li className="transition duration-250 ease-in-out hover:text-slate-300 mb-2">
+                  <a href="#testimonials">Testimonials</a>
+                </li>
+                <li className="transition duration-250 ease-in-out hover:text-slate-300 mb-2">
+                  <a href="#faq">FAQ</a>
+                </li>
+                <li className="transition duration-250 ease-in-out hover:text-slate-300">
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 }

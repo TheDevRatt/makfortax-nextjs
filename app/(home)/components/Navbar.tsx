@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
             <div className="flex-auto ">
               <a
                 className="outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-700"
-                href="/home"
+                href="#home"
               >
                 <img src="/MakForTaxLogo.svg" alt="Logo" />
               </a>
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
             <div className="flex w-full flex-col">
               <a
                 className="text-base h-11 pl-4 pr-4 rounded-md gap-2 font-semibold dark:bg-slate-800 border-slate-500 dark:text-slate-100 bg-slate-200 text-slate-900 hover:bg-slate-400 focus-visible:ring-2 focus-visible:ring-slate-700 focus-visible:outline-none focus-visible:bg-slate-400 disabled:hover:bg-slate-400 inline-flex items-center border justify-center select-none disabled:cursor-not-allowed disabled:opacity-70 transition ease-in-out duration-200 mb-4 w-full"
-                href="/login"
+                href="#contact"
               >
                 Learn More
               </a>
@@ -78,31 +78,31 @@ const Navbar: React.FC = () => {
               </a>
               <a
                 className="text-left text-md block w-full border-b border-slate-600 py-4 font-semibold text-slate-400 transition duration-200 ease-in-out last:border-none hover:text-slate-200"
-                href="/about"
+                href="#home"
               >
                 Home
               </a>
               <a
                 className="text-left text-md block w-full border-b border-slate-600 py-4 font-semibold text-slate-400 transition duration-200 ease-in-out last:border-none hover:text-slate-200"
-                href="/blog"
+                href="#about"
               >
                 About Us
               </a>
               <a
                 className="text-left text-md block w-full border-b border-slate-600 py-4 font-semibold text-slate-400 transition duration-200 ease-in-out last:border-none hover:text-slate-200"
-                href="/customers"
+                href="#services"
               >
                 Services
               </a>
               <a
                 className="text-left text-md block w-full border-b border-slate-600 py-4 font-semibold text-slate-400 transition duration-200 ease-in-out last:border-none hover:text-slate-200"
-                href="/pricing"
+                href="#testimonials"
               >
                 Testimonials
               </a>
               <a
                 className="text-left text-md block w-full border-b border-slate-600 py-4 font-semibold text-slate-400 transition duration-200 ease-in-out last:border-none hover:text-slate-200"
-                href="/enterprise"
+                href="#faq"
               >
                 FAQ
               </a>
@@ -118,8 +118,8 @@ const Navbar: React.FC = () => {
             >
               <a
                 className="outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-700 py-1"
-                aria-label="Resend"
-                href="/home"
+                aria-label="MakForTax"
+                href="#home"
               >
                 <img src="/MakForTaxLogo.svg" />
               </a>
@@ -129,7 +129,7 @@ const Navbar: React.FC = () => {
             <li>
               <a
                 className="outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-700 rounded-md px-1 py-1 text-sm font-medium text-slate-400 hover:text-slate-100 focus-visible:text-slate-200 lg:px-2"
-                href="/about"
+                href="#home"
               >
                 Home
               </a>
@@ -137,7 +137,7 @@ const Navbar: React.FC = () => {
             <li>
               <a
                 className="outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-700 rounded-md px-1 py-1 text-sm font-medium text-slate-400 hover:text-slate-100 focus-visible:text-slate-200 lg:px-2"
-                href="/blog"
+                href="#about"
               >
                 About Us
               </a>
@@ -145,7 +145,7 @@ const Navbar: React.FC = () => {
             <li>
               <a
                 className="outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-700 rounded-md px-1 py-1 text-sm font-medium text-slate-400 hover:text-slate-100 focus-visible:text-slate-200 lg:px-2"
-                href="/customers"
+                href="#services"
               >
                 Services
               </a>
@@ -153,7 +153,7 @@ const Navbar: React.FC = () => {
             <li>
               <a
                 className="outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-700 rounded-md px-1 py-1 text-sm font-medium text-slate-400 hover:text-slate-100 focus-visible:text-slate-200 lg:px-2"
-                href="/enterprise"
+                href="#testimonials"
               >
                 Testimonials
               </a>
@@ -161,7 +161,7 @@ const Navbar: React.FC = () => {
             <li>
               <a
                 className="outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-700 rounded-md px-1 py-1 text-sm font-medium text-slate-400 hover:text-slate-100 focus-visible:text-slate-200 lg:px-2"
-                href="/changelog"
+                href="#faq"
               >
                 FAQ
               </a>
@@ -169,7 +169,7 @@ const Navbar: React.FC = () => {
             <a
               className="outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-700 text-sm h-10 pl-4 pr-2 gap-0 font-semibold bg-white text-black hover:bg-white/90 focus-visible:ring-white/30 focus-visible:outline-none focus-visible:bg-white/90 disabled:hover:bg-white inline-flex items-center border justify-center select-none rounded-full disabled:cursor-not-allowed disabled:opacity-70"
               data-state="closed"
-              href="/signup"
+              href="#contact"
             >
               Learn More
               <span className="text-[#70757E]">

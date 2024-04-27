@@ -76,9 +76,16 @@
     background-clip: text;
     color: unset;
   }
+
+  .border-slate-4 {
+    border-color: #d3edf81d;
+  }
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   * {
     @apply border-border;
   }
