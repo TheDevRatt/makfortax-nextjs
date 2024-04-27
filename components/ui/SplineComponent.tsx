@@ -18,9 +18,9 @@ export const SplineComponent = ({ scene }: SplineProps) => {
   }, [scene]);
 
   return (
-    <div className="scale-[0.4] md:scale-100 -mt-[15rem] mb-5 md:mt-0">
+    <div className="scale-[0.4] md:scale-100 -mt-[18rem] -mb-[15rem] md:-mt-[18rem]">
       {isLoading && (
-        <div className="flex flex-col mt-20 mb-40 space-y-5">
+        <div className="flex flex-col mt-[10rem] mb-40 space-y-5">
           <Skeleton className="h-[500px] w-[500px] rounded-xl" />{" "}
         </div>
       )}

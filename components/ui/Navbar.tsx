@@ -106,12 +106,12 @@ const Navbar: React.FC = () => {
               >
                 Testimonials
               </a>
-              <a
+              {/* <a
                 className="text-left text-md block w-full border-b border-slate-600 py-4 font-semibold text-slate-400 transition duration-200 ease-in-out last:border-none hover:text-slate-200"
                 href="#faq"
               >
                 FAQ
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -170,12 +170,12 @@ const Navbar: React.FC = () => {
               </a>
             </li>
             <li>
-              <a
+              {/* <a
                 className="outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-700 rounded-md px-1 py-1 text-sm font-medium text-slate-400 hover:text-slate-100 focus-visible:text-slate-200 lg:px-2"
                 href="#faq"
               >
                 FAQ
-              </a>
+              </a> */}
             </li>
             <a
               className="outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-700 text-sm h-10 pl-4 pr-2 gap-0 font-semibold bg-white text-black hover:bg-white/90 focus-visible:ring-white/30 focus-visible:outline-none focus-visible:bg-white/90 disabled:hover:bg-white inline-flex items-center border justify-center select-none rounded-full disabled:cursor-not-allowed disabled:opacity-70"
