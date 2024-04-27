@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
               </a>
               <a
                 className="text-base h-11 pl-4 pr-4 rounded-md gap-2 font-semibold bg-black dark:bg-white text-white dark:text-black border-slate-500 hover:bg-black/90 dark:hover:bg-white/90 focus-visible:ring-2 dark:focus-visible:ring-white/40 focus-visible:ring-black/40 focus-visible:outline-none dark:focus-visible:bg-white/90 focus-visible:bg-black/90 disabled:hover:bg-black dark:disabled:hover:bg-white inline-flex items-center border justify-center select-none disabled:cursor-not-allowed disabled:opacity-70 transition ease-in-out duration-200 mb-4 w-full"
-                href="mailto:FillThisIn@example.com"
+                href="mailto:contact@makfortax.com?subject=Accounting%20Inquiry&body=Hello,%20I%20would%20like%20to%20request%20a%20consultation%20about%20your%20services!"
               >
                 Contact Now
               </a>

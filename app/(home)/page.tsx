@@ -84,7 +84,10 @@ export default function page() {
                 </div>
 
                 <div className="flex flex-col md:flex-row pt-5 pr-5 pl-5 md:pr-0 md:pl-0 items-center space-x-5 space-y-5 md:space-y-0">
-                  <button className="inline-flex justify-center w-full md:w-fit px-4 py-4 rounded-full tracking-widest uppercase font-bold bg-white hover:bg-[#dfe6ec] hover:text-black dark:text-black transition duration-200">
+                  <a
+                    href="mailto:contact@makfortax.com?subject=Accounting%20Inquiry&body=Hello,%20I%20would%20like%20to%20request%20a%20consultation%20about%20your%20services!"
+                    className="inline-flex justify-center w-full md:w-fit px-4 py-4 rounded-full tracking-widest uppercase font-bold bg-white hover:bg-[#dfe6ec] hover:text-black dark:text-black transition duration-200"
+                  >
                     Contact Now
                     <svg
                       fill="none"
@@ -101,8 +104,11 @@ export default function page() {
                         strokeWidth="1.5"
                       ></path>
                     </svg>
-                  </button>
-                  <button className="inline-flex justify-center w-full md:w-fit px-4 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200">
+                  </a>
+                  <a
+                    href="#services"
+                    className="inline-flex justify-center w-full md:w-fit px-4 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200"
+                  >
                     Our Services
                     <svg
                       fill="none"
@@ -119,7 +125,7 @@ export default function page() {
                         strokeWidth="1.5"
                       ></path>
                     </svg>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -391,9 +397,6 @@ export default function page() {
         className="mx-auto px-6 py-12 sm:py-24 relative mb-8 mt-8 flex w-full flex-col items-center justify-center md:mb-12 md:mt-12"
         id="testimonials"
       >
-        {/* <h2 className="mb-2 text-center text-[3rem] md:text-[3.5rem] tracking-tight leading-[120%] font-gradient">
-          Testimonials
-        </h2> */}
         <div
           aria-hidden="true"
           className="left-1/2 top-0 w-[700px] center pointer-events-none absolute h-px max-w-full -translate-x-1/2 -translate-y-1/2"
@@ -460,9 +463,12 @@ export default function page() {
           Take the first step towards financial clarity and confidence today.
         </h2>
         <div className="flex justify-center mt-10">
-          <button className="inline-flex h-20 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-16 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-2xl">
+          <a
+            href="mailto:contact@makfortax.com?subject=Accounting%20Inquiry&body=Hello,%20I%20would%20like%20to%20request%20a%20consultation%20about%20your%20services!"
+            className="inline-flex h-20 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-16 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-2xl"
+          >
             Contact Now
-          </button>
+          </a>
         </div>
       </section>
 
@@ -543,7 +549,7 @@ export default function page() {
               </h3>
               <ul className="text-sm text-slate-600 text-center md:text-right">
                 <li className="transition duration-250 ease-in-out hover:text-slate-300 mb-2">
-                  <a href="#hero">Home</a>
+                  <a href="#home">Home</a>
                 </li>
                 <li className="transition duration-250 ease-in-out hover:text-slate-300 mb-2">
                   <a href="#about">About</a>
