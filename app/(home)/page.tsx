@@ -7,6 +7,43 @@ import { Separator } from "@/components/ui/separator";
 import { Caubo } from "@/components/ui/Caubo";
 import Etia from "@/components/ui/Etia";
 import TrueBlue from "@/components/ui/TrueBlue";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
+import { title } from "process";
+
+// Put all your services and items here.
+const items = [
+  {
+    title: "Accounting & Bookkeeping",
+    subtitle: "Navigating financial complexity with precision and care",
+    bulletPoints: [
+      "Comprehensive Bookkeeping Solutions: Accurate and timely recording of all financial transactions to ensure your books are always up-to-date.",
+      "Financial Reporting and Analysis: Detailed monthly, quarterly, and annual financial reports offering insights into your financial health, enabling informed decision making.",
+      "Budgeting and Forecasting: Assistance in budget preperation and financial forecasting to support your strategic planning and financial engagement.",
+    ],
+    link: "/moon-mission",
+  },
+  {
+    title: "Payroll Services",
+    subtitle: "Simplifying payroll, empowering people",
+    bulletPoints: [
+      "Full-Service Payroll Processing: Complete payroll solutions, from calculating pay and deductions to filing necessary reports and managing year-end forms.",
+      "Compliance and Tax Reporting: Ensuring adherence to local, provincial and federal payroll regulations and tax obligations, minimizing risks and penalties.",
+      "Employee Payroll Inquiries: Providing timely and confidential handling of all payroll-related employee questions and concerns.",
+    ],
+    link: "/mars-colony",
+  },
+  {
+    title: "Personal & Corporate Taxes",
+    subtitle: "Strategic tax solutions for optimal financial health",
+    bulletPoints: [
+      "Tax Preperation and Filing: Expert preperation and timely filing of personal and corporate tax returns, tailored to maximize deductions and minimize liabilities.",
+      "Tax Planning and Consulting: Strategic tax planning services to optimize your tax position and provide guidance on tax-efficient decision-making throughout the year.",
+      "CRA Representation: Professional representation in dealings with tax authorities, including audits, inquiries, and disputes, ensuring your rights are protected.",
+    ],
+    link: "/jupiter-flyby",
+  },
+];
 
 export default function page() {
   return (
@@ -260,7 +297,89 @@ export default function page() {
             Us
           </span>
         </h2>
+
+        <p className="mx-auto mb-10 max-w-xl text-center text-sm md:text-base md:leading-[1.5] text-slate-300 font-normal">
+          <span>
+            An Expert Accountant and Educator: Bridging Knowledge with
+            Real-World Solutions While Delivering Exceptional Tax and
+            Consultation Services.
+          </span>
+        </p>
+
+        <div className="mx-auto flex justify-center md:justify-start md:ml-52">
+          <Avatar className="w-[100px] h-[100px]">
+            <AvatarImage src="https://media.licdn.com/dms/image/C5603AQHWdDaZspIRtg/profile-displayphoto-shrink_200_200/0/1516355551800?e=1719446400&v=beta&t=VCXfPXxpJWR3jzsXI5dMFdu-pOYK9-NKEL6TgOrXjjk" />
+            <AvatarFallback>UM</AvatarFallback>
+          </Avatar>
+
+          <h3 className="text-3xl ml-5 flex flex-col font-gradient">
+            Usama Makary
+            <span className="text-sm mt-2 text-slate-400">CPA, CGA, MBA</span>
+          </h3>
+        </div>
+
+        <p className="flex justify-center font-normal text-base text-slate-300 text-justify mt-5 md:ml-52 md:mr-52">
+          Hello and welcome. I’m Usama Makary, and at the heart of my accounting
+          practice lies a simple, yet profound commitment: to offer you not just
+          services, but solutions that genuinely make a difference in your
+          financial journey. For me, this mission is more than a professional
+          choice; it’s a personal calling, deeply rooted in a blend of extensive
+          education and real-world experience.
+          <br />
+          <br />
+          From the moment I began my journey, earning my B.Sc. in Accounting and
+          further solidifying my expertise with an MBA from Laurentian
+          University, and becoming a Certified Professional Accountant (CPA/CGA)
+          in Ontario, I envisioned a practice where each client’s success is
+          paramount. This vision has been my guiding light, leading me to not
+          only excel in the field but also share my knowledge as a part-time
+          professor at Durham College. Teaching and developing courses on Human
+          Resources Information Systems, Personal Finance Planning, and Taxation
+          for Business, I’ve had the unique privilege of shaping future
+          professionals while staying on the cutting edge of accounting and
+          financial planning.
+          <br />
+          <br />
+          My dual role as an educator and practitioner equips me with the unique
+          ability to demystify complex financial concepts, making them
+          accessible and actionable to you. Whether it’s navigating through
+          personal financial planning, optimizing business processes, or
+          devising effective taxation strategies, my approach is always
+          personalized, aiming to not only meet your needs but exceed your
+          expectations.
+          <br />
+          <br />
+          Join me, and let’s embark on a path to financial clarity and security,
+          underpinned by a foundation of trust, education, and unmatched
+          expertise. Your goals are my goals, and together, we can achieve them.
+        </p>
       </section>
+
+      <section className="mx-auto px-6 py-12 sm:py-24 max-w-5xl md:max-w-[100rem]">
+        <h2 className="mb-2 text-center text-[3rem] md:text-[3.5rem] tracking-tight leading-[120%] font-gradient">
+          Our
+          <span className="inline leading-[0] bg-gradient-to-br bg-clip-text text-transparent from-[#9281F7] to-[#9A54DC]">
+            {" "}
+            Services
+          </span>
+        </h2>
+
+        <p className="mx-auto mb-10 max-w-xl text-center text-sm md:text-base md:leading-[1.5] text-slate-300 font-normal">
+          <span>
+            Comprehensive Financial Services Tailored for Your Success.
+          </span>
+        </p>
+
+        <HoverEffect items={items} />
+      </section>
+
+      <section className="mx-auto px-6 py-12 sm:py-24 relative mb-8 mt-8 flex w-full flex-col items-center justify-center md:mb-12 md:mt-12">
+        <div>
+
+        </div>
+      </section>
+
+      <HeroSection />
     </div>
   );
 }
