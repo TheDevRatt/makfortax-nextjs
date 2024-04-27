@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +24,12 @@ const Navbar: React.FC = () => {
                 className="outline-none transition duration-150 ease-in-out focus-visible:ring-2 focus-visible:ring-slate-700"
                 href="#home"
               >
-                <img src="/MakForTaxLogo.svg" alt="Logo" />
+                <Image
+                  src="/MakForTaxLogo.svg"
+                  alt="Logo"
+                  width={130}
+                  height={32}
+                />
               </a>
             </div>
             <div className="flex flex-auto justify-end ">
@@ -121,7 +127,12 @@ const Navbar: React.FC = () => {
                 aria-label="MakForTax"
                 href="#home"
               >
-                <img src="/MakForTaxLogo.svg" />
+                <Image
+                  src="/MakForTaxLogo.svg"
+                  alt="Logo"
+                  width={130}
+                  height={20}
+                />
               </a>
             </span>
           </div>

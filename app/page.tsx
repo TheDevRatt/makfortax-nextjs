@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Navbar from "./components/Navbar";
-import { HeroSection } from "./components/HeroSection";
-import { HeroHighlight, Highlight } from "./components/HeroHighlight";
-import { SplineComponent } from "./components/SplineComponent";
+import Navbar from "../components/ui/Navbar";
+import { HeroSection } from "../components/ui/HeroSection";
+import { HeroHighlight, Highlight } from "../components/ui/HeroHighlight";
+import { SplineComponent } from "../components/ui/SplineComponent";
 import { Separator } from "@/components/ui/separator";
 import { Caubo } from "@/components/ui/Caubo";
 import Etia from "@/components/ui/Etia";
@@ -10,6 +10,7 @@ import TrueBlue from "@/components/ui/TrueBlue";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { title } from "process";
+import Image from "next/image";
 
 // Put all your services and items here.
 const items = [
@@ -209,7 +210,7 @@ export default function page() {
                 </svg>
                 <p className="text-center text-base mt-5 text-slate-400 font-normal">
                   <span>
-                    Recipient of University of Toronto's Excellence Through
+                    Recipient of University of Toronto&apos;s Excellence Through
                     Innovation Award in 2014
                   </span>
                 </p>
@@ -286,8 +287,8 @@ export default function page() {
                 </svg>
                 <p className="text-center text-base mt-5 text-slate-400 font-normal">
                   <span>
-                    Recipient of University of Toronto's True Blue Monthly Award
-                    for Leadership in 2022
+                    Recipient of University of Toronto&apos;s True Blue Monthly
+                    Award for Leadership in 2022
                   </span>
                 </p>
               </div>
@@ -506,7 +507,7 @@ export default function page() {
                   target="_blank"
                   href="https://github.com/TheDevRatt"
                 >
-                  <img
+                  <Image
                     alt="GitHub"
                     loading="lazy"
                     width={32}
@@ -521,7 +522,7 @@ export default function page() {
                   target="_blank"
                   href="https://www.linkedin.com/in/matthew-makary/"
                 >
-                  <img
+                  <Image
                     alt="LinkedIn"
                     loading="lazy"
                     width={32}
@@ -535,10 +536,12 @@ export default function page() {
 
             {/* Center: Large Logo (Assuming you have an image path) */}
             <div className="flex-1 flex justify-center mb-10">
-              <img
+              <Image
                 src="/MakForTaxLogo.svg"
                 alt="Large Logo"
                 className="w-auto md:h-10"
+                width={100}
+                height={32}
               />
             </div>
 
