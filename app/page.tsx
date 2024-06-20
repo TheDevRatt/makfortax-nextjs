@@ -314,10 +314,9 @@ export default function page() {
               Consultation Services.
             </span>
           </p>
-
           <div className="mx-auto flex justify-center md:justify-start md:ml-52">
             <Avatar className="w-[100px] h-[100px]">
-              <AvatarImage src="https://media.licdn.com/dms/image/C5603AQHWdDaZspIRtg/profile-displayphoto-shrink_200_200/0/1516355551800?e=1719446400&v=beta&t=VCXfPXxpJWR3jzsXI5dMFdu-pOYK9-NKEL6TgOrXjjk" />
+              <AvatarImage src="/DAD.png" />
               <AvatarFallback>UM</AvatarFallback>
             </Avatar>
 
